@@ -15,7 +15,7 @@ export default function Slider() {
     return (
         <>
             <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
-                {arr.map(item => <SwiperSlide><img src={`src/assets/${item}`} className='h-[100vh] w-[100vw] brightness-50' alt="" /></SwiperSlide>) }
+                {arr.map(item => <SwiperSlide><img src={`/assets/${item}`} className='h-[100vh] w-[100vw] brightness-50' alt="" /></SwiperSlide>) }
             </Swiper>
         </>
     );

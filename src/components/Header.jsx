@@ -7,7 +7,7 @@ function Header() {
     <header className="w-full absolute top-0 z-50">
       <div className="px-10 py-3 flex items-center justify-between">
         <Link to={'/'}>
-          <img src="/src/assets/logo.svg" alt="Logo" className="h-10" />
+          <img src="/assets/logo.svg" alt="Logo" className="h-10" />
         </Link>
         <nav className="flex gap-15 text-gray-200 font-medium text-sm md:text-base">
           <Link to="/kinoteatrlar" className="hover:text-orange-600 transition">Kinoteatrlar</Link>
