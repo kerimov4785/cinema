@@ -48,7 +48,7 @@ function Section() {
         <div className='py-[110px] px-10 '>
             <h3 className='text-white font-semibold text-3xl mb-3'>Oturacag secimi</h3>
             <div className='bg-[url("https://new.parkcinema.az/images/movie-herobg.svg")] flex gap-4 p-3 relative z-0 rounded-xl before:absolute before:w-full before:z-[-1] before:h-full before:bg-[#161616d6] before:left-0 before:top-0 before:rounded-xl ' >
-                <img src={`/src/assets/${movie.image}`} alt="" className='w-[180px] h-[276px] rounded-xl ' />
+                <img src={`/assets/${movie.image}`} alt="" className='w-[180px] h-[276px] rounded-xl ' />
                 <div className='text-white font-semibold flex flex-col justify-between text-[18px] ' >
                     <h4>{movie.name}</h4>
                     <p>{theatre.type.slice(1, 3)}</p>
