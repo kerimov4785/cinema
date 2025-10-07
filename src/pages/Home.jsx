@@ -24,8 +24,10 @@ function Home() {
     setTheatreStatus(false)
     setTheatre(a)
   }
-  if(!data){
-    return <Loader/>
+  console.log(data == false)
+  
+  if (data.length == 0) {
+    return <Loader />
   }
   return (
     <>
@@ -50,7 +52,7 @@ function Home() {
       </div>
       <div className='flex container gap-15 flex-wrap justify-center m-auto mt-[50px]'>
         {
-          data.filter(item => (item.languages.includes(lang) || lang == 'Dil') && (moviesInTheatre.includes(item.id) || moviesInTheatre == 'all' ))
+          data.filter(item => (item.languages.includes(lang) || lang == 'Dil') && (moviesInTheatre.includes(item.id) || moviesInTheatre == 'all'))
             .map(item => <Card key={item.id} item={item} />)
         }
       </div>
